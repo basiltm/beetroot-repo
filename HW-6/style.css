@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+.header {
+    height: 117px;
+    width: 1192px;
+    background-color: #4a4f56;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #eb7e7f;
+    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+section {
+    height: 464px;
+    width: 1192px;
+    background: #3b3f45;
+    padding-top: 41px;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 30px;
+    color: white;
+    width: 800px;
+    height: 64px;
+    background-color: #88839e;
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+
+.tale {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+li:nth-child(even) {
+    background-color: #7a7593;
+}
+
+li:hover {
+    background-color: #625e77;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+li:active  {
+    background-color: #eb7e7f;
+}
+
+input:checked+span {
+    text-decoration: line-through;
+    color: #a39db0;
+}
+
+footer {
+    display: block;
+    height: 200px;
+    width: 1192px;
+    background-color: #3b3f45;
+    margin: 0 auto;
+    padding-left: 40px;
+    
+}
+
+.appetit {
+    height: 71px;
+    width: 800px;
+    background-color: #4a4f56;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+
