@@ -1,0 +1,144 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+.header-bg {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/img/header/header-bg.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 1110px;
+}
+
+.logo-main {
+  color: $logo-color;
+  font-family: $logo-font;
+
+  &__title {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 2em;
+    letter-spacing: 0.18em;
+    padding-bottom: 40px;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  font-size: 0;
+  text-align: center;
+  width: 650px;
+  height: 60px;
+
+  &__form {
+    display: inline-block;
+    font-size: 14px;
+    height: 58px;
+    width: 490px;
+    font-family: $logo-font;
+    text-align: center;
+    letter-spacing: 0.18em;
+    border: none;
+    background-color: white;
+  }
+
+  &__form--focus:focus {
+    transition: 0.2s ease-in-out;
+    background-color: #d7edfb;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    font-size: 14px;
+    border: 3px solid white;
+    background-color: #5474fd;
+    color: white;
+    font-family: $menu-font;
+    letter-spacing: 0.18em;
+  }
+  &__btn--hover:hover {
+    background-color: #4365f8;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.scroll-title {
+  font-family: $logo-font;
+  font-weight: 14px;
+  color: white;
+  letter-spacing: 0.18em;
+  opacity: 0.8;
+  padding-top: 120px;
+}
+
+.menu-line {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 100%;
+  background-color: #5474fd;
+  position: absolute;
+
+  .content-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+
+    &__logo-menu {
+      display: flex;
+      color: $logo-color;
+      font-family: $logo-font;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__item a {
+      font-family: $logo-font;
+      color: white;
+      font-weight: 24px;
+      font-family: $menu-font;
+      text-decoration: none;
+      padding: 0 30px;
+      height: 80px;
+      line-height: 80px;
+    }
+    &__item--hover:hover {
+        background-color: #4365f8;
+        transition: 0.2s ease-in-out;
+    }
+
+  
+  }
+}
